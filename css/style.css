@@ -1,18 +1,98 @@
-body,html{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Viga', sans-serif;
 }
 
 header {
     background-color: orange;
     height: 120px;
     width:100%;
-	border-bottom: 1px solid #3A3939;
     padding:0px;
     margin: 0px;
     justify-content: space-between;
     display: flex;
     align-items: center;
 
+}
+header nav {
+    float: right;
+    padding:20px;
+    /* padding-right:400px; */
+}
+header nav ul li{
+  display:inline;
+  padding-left:25px;
+}
+ul li a{
+    font-size:20px;
+    color:#171616;
+    text-decoration:none;
+    transition:0.5s;
+
+}
+ul li a:hover{
+    font-size: 22px;
+    text-decoration:underline;
+    color:#ff6f0f;
+    text-decoration-thickness: 2px;
+}
+
+body {
+    background-color:blue;
+}
+
+.logo {
+    padding-left:30%;
+}
+.HeroBgImg {
+    /* position: relative; */
+    position:static;
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/hero-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-height: unset;
+    padding: 370px;
+    background-position:50% 20%;
+
+}
+/* MEDIA - - Makes changes based on elements like screen size*/ 
+@media screen and (max-width:2038px){
+  .HeroBgImg{
+    background-position:50% 20%;}
+}
+@media screen and (max-width:1700px){
+  .HeroBgImg{
+    background-position:50% 5%;}
+}
+@media screen and (max-width:1550px){
+  .HeroBgImg{
+    background-position:50% 0%;
+    padding:335px;}
+}
+@media screen and (max-width:1245px){
+  .HeroBgImg{
+    background-position:50% 0%;
+    padding:268px;}
+}
+@media screen and (max-width:1040px){
+  .HeroBgImg{
+    background-position:50% 0%;
+    padding:225px;}
+}
+@media screen and (max-width:840px){
+  .HeroBgImg{
+    background-position:50% 0%;
+    padding:182px;}
+}
+@media screen and (max-width:840px){
+  .HeroBgImg{
+    background-position:50% 0%;
+    padding:182px;}
 }
